@@ -18,5 +18,6 @@ if(quote[0]=== "you"){
     quote.push(library["verb"][1]);
 }
    quote.push(library["object"][generateRandomNumber(4)]); 
-
-console.log(quote);
+let message = quote.join(" ");
+message = message[0].toUpperCase() + message.substring(1) + ".";
+console.log(message);
